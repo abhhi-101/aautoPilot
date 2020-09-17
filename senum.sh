@@ -29,7 +29,7 @@ rm -r ~/projects/$domain/domains/subfinder.txt
 rm -r ~/projects/$domain/domains/certspotter.txt
 rm -r ~/projects/$domain/domains/amass.txt
 
-~/code-a-thon/shuffledns/cmd/shuffledns/shuffledns -list ~/projects/$domain/domains/all.txt -r $resolver -massdns $massdns | tee ~/projects/$domain/domains/domain.txt
+~/code-a-thon/shuffledns/cmd/shuffledns/shuffledns -list ~/projects/kartpay.com/domains/all.txt -r ~/code-a-thon/resolver.txt -massdns ~/code-a-thon/massdns/bin/massdns | tee ~/projects/$domain/domains/domain.txt
 ~/code-a-thon/httpx/cmd/httpx/httpx -silent -websocket -l ~/projects/$domain/domains/domain.txt | tee ~/projects/$domain/domains/probed.txt
 
 
@@ -41,5 +41,6 @@ subdomain_enum $1
 echo "----------------------------------------------------------"
 echo "################## Done with subs ########################"
 echo "----------------------------------------------------------"
+
 
 
