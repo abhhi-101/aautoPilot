@@ -4,6 +4,7 @@
 domain=$1 #domain_name_here
 mkdir -p ~/projects/$domain/domains
 resolver="~/code-a-thon/resolver.txt" 
+massdns="~/code-a-thon/massdns/bin/massdns"
 domains="~/projects/$domain/domains"
 
 
