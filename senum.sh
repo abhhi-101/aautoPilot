@@ -5,6 +5,12 @@ domain=$1 #domain_name_here
 mkdir -p ~/projects/$domain/domains
 resolver="~/code-a-thon/resolver.txt" 
 domains="~/projects/$domain/domains"
+mkdir -p ~/projects/$domain/domains/sublister.txt
+mkdir -p ~/projects/$domain/domains/subfinder.txt
+mkdir -p ~/projects/$domain/domains/certspotter.txt
+mkdir -p ~/projects/$domain/domains/amass.txt
+
+
 
 echo "----------------------------------------------------------"
 echo "##################                    ####################"
