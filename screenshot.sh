@@ -13,7 +13,7 @@ echo "################          ss            ##################"
 echo "##################     ---- ----      ####################"
 echo "----------------------------------------------------------"
 
-cd ~/projects/$domain/ss;cat $domains | ~/code-a-thon/aquatone
+cd ~/projects/$domain/ss;cat ~/projects/$domain/domains/domain.txt | ~/code-a-thon/aquatone
 
 echo "----------------------------------------------------------"
 echo "################## Done with Dirb ########################"
