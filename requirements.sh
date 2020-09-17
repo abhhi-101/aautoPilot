@@ -53,4 +53,9 @@ sudo go build main.go
 mv main naabu
 cd
 cd ~/code-a-thon/
-
+echo "##########Installing massdns##########"
+git clone https://github.com/blechschmidt/massdns.git
+cd massdns
+make
+cd 
+cd ~/code-a-thon/
