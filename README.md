@@ -8,8 +8,8 @@ This is my code for Automation in Hacking for code-a-thon GHRaisoni
 1. run ``bash requirements.sh``.
 
 ### How to Use
-*``cd code-a-thon``
- *``bash abhhi.sh``
+1. ``cd code-a-thon``
+1. ``bash abhhi.sh``
 
 ### Author
 abhhi
