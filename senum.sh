@@ -5,10 +5,7 @@ domain=$1 #domain_name_here
 mkdir -p ~/projects/$domain/domains
 resolver="~/code-a-thon/resolver.txt" 
 domains="~/projects/$domain/domains"
-mkdir -p ~/projects/$domain/domains/sublister.txt
-mkdir -p ~/projects/$domain/domains/subfinder.txt
-mkdir -p ~/projects/$domain/domains/certspotter.txt
-mkdir -p ~/projects/$domain/domains/amass.txt
+
 
 
 
@@ -21,7 +18,7 @@ echo "----------------------------------------------------------"
 
 subdomain_enum(){
 
-sublist3r -d $domain -t 50 -p 80,443 -n | awk '/ - / {print$1}' > $domains/sublister.txt
+sudo sublist3r -d $domain -t 50 -p 80,443 -n | awk '/ - / {print$1}' >  ~/projects/$domain/domains/sublister.txt
 ~/code-a-thon/subfinder/cmd/subfinder/subfinder -d $domain  -max-time 2 -nC -nW  > $domains/subfinder.txt
 curl -s https://certspotter.com/api/v0/certs\?domain\=$domain | jq '.[].dns_names[]' | sed 's/\"//g' | sed 's/\*\.//g' | sort -u | grep $domain  > $domains/certspotter.txt
 timeout 3m amass enum --passive -silent -d $domain > $domains/amass.txt
