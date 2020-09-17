@@ -35,7 +35,7 @@ cd ~/code-a-thon/
 echo "##########Installing nuclei##########"
 
 git clone https://github.com/projectdiscovery/nuclei.git
-cd nuclei/v2/cmd/nuclei
+cd nuclei/cmd/nuclei
 sudo go build main.go
 mv main.go nuclei
 cd
