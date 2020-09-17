@@ -9,8 +9,10 @@ This is my code for Automation in Hacking for code-a-thon GHRaisoni
 
 ### How to Use
 1. ``cd code-a-thon``
-1. ``bash abhhi.sh``
-
+1. ``bash abhhi.sh target.txt``
+### what in target.txt
+1. google.com  --> names of target root domains
+2. yahoo.com   --> mutiple targets at a time
 ### Author
 abhhi
 
