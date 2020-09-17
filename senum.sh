@@ -23,13 +23,13 @@ sudo sublist3r -d $domain -t 50 -p 80,443 -n | awk '/ - / {print$1}' | tee  ~/pr
 curl -s https://certspotter.com/api/v0/certs\?domain\=$domain | jq '.[].dns_names[]' | sed 's/\"//g' | sed 's/\*\.//g' | sort -u | grep $domain  | tee ~/projects/$domain/domains/certspotter.txt
 timeout 3m amass enum --passive -silent -d $domain | tee ~/projects/$domain/domains/amass.txt
 cat ~/projects/$domain/domains/*.txt | sort | uniq | tee ~/projects/$domain/domains/all.txt
-rm -r $domains/sublister.txt
-rm -r $domains/subfinder.txt
-rm -r $domains/certspotter.txt
-rm -r $domains/amass.txt
+rm -r ~/projects/$domain/domains/sublister.txt
+rm -r ~/projects/$domain/domains/subfinder.txt
+rm -r ~/projects/$domain/domains/certspotter.txt
+rm -r ~/projects/$domain/domains/amass.txt
 
-~/code-a-thon/shuffledns/cmd/shuffledns/shuffledns -list $domains/all.txt -r $resolver -massdns $massdns | tee ~/projects/$domain/domains/domain.txt
-~/code-a-thon/httpx/cmd/httpx/httpx -silent -websocket -l $domains/domain.txt | tee ~/projects/$domain/domains/probed.txt
+~/code-a-thon/shuffledns/cmd/shuffledns/shuffledns -list ~/projects/$domain/domains/all.txt -r $resolver -massdns $massdns | tee ~/projects/$domain/domains/domain.txt
+~/code-a-thon/httpx/cmd/httpx/httpx -silent -websocket -l ~/projects/$domain/domains/domain.txt | tee ~/projects/$domain/domains/probed.txt
 
 
 
