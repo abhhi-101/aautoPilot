@@ -15,6 +15,4 @@ run ``bash requirements.sh``
 abhhi
 
 ### Credit 
-all the public repo 
-project discovery
-kali
+all the public repo, project discovery & kali
