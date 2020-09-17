@@ -1,11 +1,11 @@
 #!/bin/env bash
 
 domain=$1
-
+mkdir -p ~/projects/$domain/scan/nuclei
 probed="~/projects/$domain/domains/probed.txt"
 scan="~/projects/$domain/scan"
 
-mkdir -p $scan/nuclie
+
 
 echo "----------------------------------------------------------"
 echo "##################                    ####################"
