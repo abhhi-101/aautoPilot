@@ -14,7 +14,7 @@ echo "----------------------------------------------------------"
 
 findPorts(){
 
-~/code-a-thon/naabu/cmd/naabu/naabu -silent -iL ~/projects/$domain/domains/domain.txt -o ~/projects/$domain/sports/ports.txt
+~/aautoPilot/naabu/cmd/naabu/naabu -silent -iL ~/projects/$domain/domains/domain.txt -o ~/projects/$domain/sports/ports.txt
 
 }
 findPorts
