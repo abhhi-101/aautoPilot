@@ -1,14 +1,14 @@
- abhhi[code-a-thon]
+ abhhi's aautoPilot
  ----------------------------------
-This is my code for Automation in Hacking for code-a-thon GHRaisoni
+It's My automated Script to recon and Scan the target host using just its root-domain ;)
 ### How to install
 
-1. ``git clone https://github.com/birdawade11/code-a-thon.git``
-1. ``cd code-a-thon``
+1. ``git clone https://github.com/birdawade11/aautoPilot.git``
+1. ``cd aautoPilot``
 1. run ``bash requirements.sh``
 
 ### How to Use
-1. ``cd code-a-thon``
+1. ``cd aautoPilot``
 1. ``bash abhhi.sh target.txt``
 ### what in target.txt
 1. google.com  --> names of target root domains
