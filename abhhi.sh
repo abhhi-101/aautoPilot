@@ -14,22 +14,22 @@ echo "-----------------#-hack-the-planet-#---------------------"
 for url in $(cat $urls); do 
 
 echo "Findings SubDomains ": $url
-	bash ~/code-a-thon/senum.sh $url
+	bash ~/aautoPilot/senum.sh $url
 echo "----------------------------------------------------------"
 echo "############ Done with subdirectories ####################"
 echo "Scanning for ": $url
-	bash ~/code-a-thon/nscan.sh $url
+	bash ~/aautoPilot/nscan.sh $url
 echo "----------------------------------------------------------"
 echo "################## Done with scanning ####################"
 echo "Capturing ScreenShots ": $url
 echo "----------------------------------------------------------"
-	bash ~/code-a-thon/screenshot.sh $url
+	bash ~/aautoPilot/screenshot.sh $url
 echo "----------------------------------------------------------"
 echo "################## Done with ss ##########################"
 
 echo "Scanning hosts ": $url
 echo "################## Done with Basic ########################"
-	bash ~/code-a-thon/sport.sh $url
+	bash ~/aautoPilot/sport.sh $url
 echo "----------------------------------------------------------"
 echo "################## Done with Basic ########################"
 echo "----------------------------------------------------------"
