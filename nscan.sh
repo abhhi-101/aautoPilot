@@ -15,19 +15,19 @@ echo "##################       ------        ####################"
 echo "----------------------------------------------------------"
 
 
-~/code-a-thon/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/code-a-thon/nuclei-templates/cves -o cves
-~/code-a-thon/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/code-a-thon/nuclei-templates/dns -o dns
-~/code-a-thon/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/code-a-thon/nuclei-templates/generic-detections -o generic-detection
-~/code-a-thon/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/code-a-thon/nuclei-templates/panels -o panels	
-~/code-a-thon/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/code-a-thon/nuclei-templates/subdomain-takeover	 -o subdomain-takeover
-~/code-a-thon/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/code-a-thon/nuclei-templates/tokens -o tokens
-~/code-a-thon/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/code-a-thon/nuclei-templates/workflows	 -o workflows
-~/code-a-thon/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/code-a-thon/nuclei-templates/default-credentials -o default-credentials
-~/code-a-thon/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/code-a-thon/nuclei-templates/files -o files
-~/code-a-thon/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/code-a-thon/nuclei-templates/security-misconfiguration -o security-misconfiguration
-~/code-a-thon/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/code-a-thon/nuclei-templates/payloads -o payloads
-~/code-a-thon/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/code-a-thon/nuclei-templates/technologies -o technologies	
-~/code-a-thon/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/code-a-thon/nuclei-templates/vulnerabilities -o vulnerabilities
+~/aautoPilot/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/aautoPilot/nuclei-templates/cves -o cves
+~/aautoPilot/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/aautoPilot/nuclei-templates/dns -o dns
+~/aautoPilot/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/aautoPilot/nuclei-templates/generic-detections -o generic-detection
+~/aautoPilot/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/aautoPilot/nuclei-templates/panels -o panels	
+~/aautoPilot/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/aautoPilot/nuclei-templates/subdomain-takeover	 -o subdomain-takeover
+~/aautoPilot/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/aautoPilot/nuclei-templates/tokens -o tokens
+~/aautoPilot/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/aautoPilot/nuclei-templates/workflows	 -o workflows
+~/aautoPilot/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/aautoPilot/nuclei-templates/default-credentials -o default-credentials
+~/aautoPilot/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/aautoPilot/nuclei-templates/files -o files
+~/aautoPilot/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/aautoPilot/nuclei-templates/security-misconfiguration -o security-misconfiguration
+~/aautoPilot/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/aautoPilot/nuclei-templates/payloads -o payloads
+~/aautoPilot/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/aautoPilot/nuclei-templates/technologies -o technologies	
+~/aautoPilot/nuclei/cmd/nuclei/nuclei -c 200 -silent -l ~/projects/$domain/domains/probed.txt -t ~/aautoPilot/nuclei-templates/vulnerabilities -o vulnerabilities
 
 mv cves $scan/cve
 mv dns $scan/dns
