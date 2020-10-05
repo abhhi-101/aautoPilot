@@ -21,6 +21,9 @@ abhhi.sh takes 1 root domain from target.txt and :
 3. then it will take the screen shots for home page of all subdomain found so you can priorities which subdomain to test for vuln first
 4. lastly it will finds the open ports from all the hosts found :)
 
+for blog : https://abhhiblogs.wordpress.com/2020/09/18/aautopilot/
+for ppt : https://www.slideshare.net/AbhishekBirdawade/aautopilot
+
 ### Author
 abhhi
 
