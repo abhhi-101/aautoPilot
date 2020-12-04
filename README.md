@@ -3,7 +3,7 @@
 It's My automated Script to recon and Scan the target host using just its root-domain ;)
 ### How to install
 
-1. ``git clone https://github.com/birdawade11/aautoPilot.git``
+1. ``git clone https://github.com/abhhi-101/aautoPilot.git``
 1. ``cd aautoPilot``
 1. run ``bash requirements.sh``
 
